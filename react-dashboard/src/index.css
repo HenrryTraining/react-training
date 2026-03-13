@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  padding: 40px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+div {
+  margin-bottom: 10px;
+}

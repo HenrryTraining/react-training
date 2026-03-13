@@ -1,0 +1,21 @@
+# ignore node dependencies in all projects
+**/node_modules
+
+# build folders
+**/dist
+**/build
+
+# environment variables
+**/.env
+**/.env.*
+
+# logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
