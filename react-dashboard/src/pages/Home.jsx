@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import {getUsers} from '../services/api'
-import SearchBar from '../Components/SearchBar'
-import UserCard from '../Components/UserCard'
+import SearchBar from '../components/SearchBar'
+import UserCard from '../components/UserCard'
 
 function Home() {
     const [users, setUsers] = useState([])
