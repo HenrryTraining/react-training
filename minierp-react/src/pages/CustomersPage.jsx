@@ -104,7 +104,11 @@ export default function CustomersPage() {
       {/* Mensaje cuando no hay resultados */}
       {filtered.length === 0 && (
         <div style={styles.empty}>
-          <p>No se encontraron clientes para "{search}"</p>
+          <p>
+            {search
+              ? `No se encontraron clientes para "${search}"`
+              : 'No hay clientes aún. ¡Creá el primero!'}
+          </p>
         </div>
       )}
 
@@ -267,12 +271,12 @@ const styles = {
     color: '#444'
   },
   deleteBtn: {
-  padding: '0.3rem 0.8rem',
-  backgroundColor: '#fff5f5',
-  border: '1px solid #fed7d7',
-  borderRadius: '6px',
-  cursor: 'pointer',
-  fontSize: '0.85rem',
-  color: '#e53e3e'
-}
+    padding: '0.3rem 0.8rem',
+    backgroundColor: '#fff5f5',
+    border: '1px solid #fed7d7',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontSize: '0.85rem',
+    color: '#e53e3e'
+  }
 }
