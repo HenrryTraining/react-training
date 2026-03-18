@@ -96,7 +96,7 @@ export default function CustomerModal({ customer, onClose, onSave }) {
                 </div>
 
                 <div style={styles.field}>
-                    <label style={styles.label}>email</label>
+                    <label style={styles.label}>E-mail *</label>
                     <input
                         style={styles.input}
                         type="text"
@@ -106,8 +106,8 @@ export default function CustomerModal({ customer, onClose, onSave }) {
                     />
                 </div>
 
-                <div style={styles.row}>
-                    <label style={styles.label}>Precio *</label>
+                <div style={styles.field}>
+                    <label style={styles.label}>Teléfono *</label>
                     <input
                         style={styles.input}
                         type="text"
@@ -117,8 +117,8 @@ export default function CustomerModal({ customer, onClose, onSave }) {
                     />
                 </div>
 
-                <div style={{ ...styles.field, flex: 1 }}>
-                    <label style={styles.label}>Stock *</label>
+                <div style={styles.field}>
+                    <label style={styles.label}>Dirección</label>
                     <input
                         style={styles.input}
                         type="text"
