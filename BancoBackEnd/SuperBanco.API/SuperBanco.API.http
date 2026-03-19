@@ -1,0 +1,6 @@
+@SuperBanco.API_HostAddress = http://localhost:5084
+
+GET {{SuperBanco.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
