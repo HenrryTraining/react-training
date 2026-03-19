@@ -8,13 +8,23 @@ export default function Sidebar() {
         <p style={styles.sectionTitle}>Transacciones</p>
         <NavLink
           to="/orders"
+          end
           style={({ isActive }) => ({
             ...styles.link,
             ...(isActive ? styles.linkActive : {})
           })}
         >
-          📋 Órdenes
+          📋 Lista de Órdenes
         </NavLink>
+      <NavLink
+        to="/orders/new"
+        style={({ isActive }) => ({
+          ...styles.link,
+          ...(isActive ? styles.linkActive : {})
+        })}
+      >
+        📋 Nueva Orden
+      </NavLink>
       </div>
 
       <div style={styles.section}>
@@ -46,7 +56,7 @@ export default function Sidebar() {
 const styles = {
   sidebar: {
     width: '220px',
-    minHeight: '100vh',
+    minHeight: '100%',
     backgroundColor: '#1a1a2e',
     padding: '1.5rem 0',
     flexShrink: 0

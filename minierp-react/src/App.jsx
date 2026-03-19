@@ -2,41 +2,51 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './hooks/useAuth.js'
 import LoginPage from './pages/LoginPage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
-import OrdersPage from './pages/OrdersPage.jsx'
+import NewOrderPage from './pages/NewOrderPage.jsx'
+import OrdersListPage from './pages/OrdersListPage.jsx'
+import OrderDetailPage from './pages/OrderDetailPage.jsx'   
 import CustomersPage from './pages/CustomersPage.jsx'
 import Sidebar from './components/Sidebar.jsx'
 
 function App() {
   const { isAuth, user, logout } = useAuth()
 
+  // Si no está logueado, muestra solo el login
   if (!isAuth) {
     return <LoginPage />
   }
 
   return (
     <BrowserRouter>
-      <div style={styles.app}>
+      <div className="flex flex-col min-h-screen">
 
         {/* Navbar */}
-        <div style={styles.navbar}>
-          <span style={styles.brand}>MiniERP</span>
-          <div style={styles.userInfo}>
+        <div className="flex justify-between items-center px-8 py-4 bg-[#1a1a2e] text-white sticky top-0 z-50">
+          <span className="text-lg font-bold">MiniERP</span>
+          <div className="flex items-center gap-4 text-sm">
             <span>{user.email}</span>
-            <span style={styles.role}>{user.role}</span>
-            <button style={styles.logoutBtn} onClick={logout}>
+            <span className="bg-indigo-600 px-3 py-0.5 rounded-full text-xs">
+              {user.role}
+            </span>
+            <button
+              onClick={logout}
+              className="border border-white/30 text-white px-3 py-1 rounded-md text-sm hover:bg-white/10"
+            >
               Cerrar sesión
             </button>
           </div>
         </div>
 
         {/* Sidebar + Contenido */}
-        <div style={styles.body}>
+        <div className="flex flex-1">
           <Sidebar />
-          <main style={styles.main}>
+          <main className="flex-1 bg-gray-100 overflow-auto">
             <Routes>
               <Route path="/" element={<Navigate to="/orders" />} />
+              <Route path="/orders"    element={<OrdersListPage />} />
+              <Route path="/orders/new"    element={<NewOrderPage />} />
+              <Route path="/orders/:id"   element={<OrderDetailPage />} />  {/* ← nuevo */}
               <Route path="/products"  element={<ProductsPage />} />
-              <Route path="/orders"    element={<OrdersPage />} />
               <Route path="/customers" element={<CustomersPage />} />
             </Routes>
           </main>
@@ -45,60 +55,6 @@ function App() {
       </div>
     </BrowserRouter>
   )
-}
-
-const styles = {
-  app: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh'
-  },
-  navbar: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '1rem 2rem',
-    backgroundColor: '#1a1a2e',
-    color: 'white',
-    position: 'sticky',
-    top: 0,
-    zIndex: 100
-  },
-  brand: {
-    fontSize: '1.2rem',
-    fontWeight: '700',
-    color: 'white'
-  },
-  userInfo: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1rem',
-    fontSize: '0.9rem'
-  },
-  role: {
-    backgroundColor: '#4f46e5',
-    padding: '0.2rem 0.6rem',
-    borderRadius: '999px',
-    fontSize: '0.8rem'
-  },
-  logoutBtn: {
-    backgroundColor: 'transparent',
-    border: '1px solid rgba(255,255,255,0.3)',
-    color: 'white',
-    padding: '0.3rem 0.8rem',
-    borderRadius: '6px',
-    cursor: 'pointer',
-    fontSize: '0.85rem'
-  },
-  body: {
-    display: 'flex',
-    flex: 1
-  },
-  main: {
-    flex: 1,
-    backgroundColor: '#f0f2f5',
-    overflow: 'auto'
-  }
 }
 
 export default App
