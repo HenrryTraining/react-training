@@ -1,0 +1,12 @@
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\bin\Debug\net9.0\SuperBanco.Domain.deps.json
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\bin\Debug\net9.0\SuperBanco.Domain.dll
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\bin\Debug\net9.0\SuperBanco.Domain.pdb
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.AssemblyInfoInputs.cache
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.AssemblyInfo.cs
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.csproj.CoreCompileInputs.cache
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.sourcelink.json
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.dll
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\refint\SuperBanco.Domain.dll
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\SuperBanco.Domain.pdb
+D:\Proyectos\Esage\React\react-training\BancoBackEnd\SuperBanco.Domain\obj\Debug\net9.0\ref\SuperBanco.Domain.dll

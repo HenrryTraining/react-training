@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Kwe2rbv9gIA=",
+  "dgSpecHash": "jV0ST2Q0ics=",
   "success": true,
   "projectFilePath": "D:\\Proyectos\\Esage\\React\\react-training\\BancoBackEnd\\SuperBanco.Application\\SuperBanco.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HenrryVelez\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

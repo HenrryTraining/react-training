@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperBanco.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcc43b1b0a316d231dc46f637a00640213601085")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da193674f2ebc38ae64e1d21e9c88c1315ffa9d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperBanco.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperBanco.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
