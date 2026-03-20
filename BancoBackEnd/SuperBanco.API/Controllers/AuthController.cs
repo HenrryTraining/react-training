@@ -8,6 +8,7 @@ namespace SuperBanco.API.Controllers;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
+    //borrar esta linea
     private readonly IAuthService _authService;
 
     public AuthController(IAuthService authService)

@@ -1,21 +1,32 @@
-# ignore node dependencies in all projects
-**/node_modules
-
-# build folders
-**/dist
-**/build
-
-# environment variables
-**/.env
-**/.env.*
-
-# logs
-*.log
-
-# OS files
+# ─── OS ───────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# IDE
+# ─── IDE ──────────────────────────────────────────
 .vscode
 .idea
+.vs/
+*.user
+*.suo
+
+# ─── React / Node ─────────────────────────────────
+**/node_modules
+**/dist
+**/build
+**/.env
+**/.env.*
+*.log
+
+# ─── .NET ─────────────────────────────────────────
+**/bin/
+**/obj/
+**/publish/
+*.nupkg
+**/packages/
+
+# ─── .NET — Entity Framework ──────────────────────
+**/Migrations/*.Designer.cs
+
+# ─── .NET — Configuración local (no subir secrets) 
+**/appsettings.Development.json
+**/appsettings.Local.json
